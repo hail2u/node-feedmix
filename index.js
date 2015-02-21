@@ -40,12 +40,15 @@ var mergeItems = function (items, feeds, options) {
 };
 
 exports.merge = function (feeds, options) {
+  var channel;
+  var feed;
+
   if (!options) {
     options = {};
   }
 
-  var feed = parseFeedSync(feeds.shift(), options);
-  var channel = feed.rss.channel[0];
+  feed = parseFeedSync(feeds.shift(), options);
+  channel = feed.rss.channel[0];
   channel.item = mergeItems(channel.item, feeds, options);
   channel.lastBuildDate = channel.item[0].pubDate;
 
