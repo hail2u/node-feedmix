@@ -9,6 +9,20 @@ var parseFeedSync = function (feed, options) {
       throw error;
     }
 
+    if (!data.rss) {
+      error = new Error('The root element is not `rss`');
+    } else if (!data.rss.channel) {
+      error = new Error('There is no `channel` element');
+    } else if (data.rss.channel.length !== 1) {
+      error = new Error('There is more than one `channel` element');
+    } else if (!data.rss.channel[0].item) {
+      error = new Error('There is no `item` element');
+    }
+
+    if (error) {
+      throw error;
+    }
+
     obj = data;
   });
 
