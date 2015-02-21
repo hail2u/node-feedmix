@@ -3,7 +3,7 @@
 var xml2js = require('xml2js');
 
 var parseFeedSync = function (feed, options) {
-  var obj = {};
+  var obj;
   xml2js.parseString(feed, options, function (error, data) {
     if (error) {
       throw error;
