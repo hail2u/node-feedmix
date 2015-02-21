@@ -1,7 +1,7 @@
 {
   "name": "feedmix",
   "description": "Merge RSS 2.0 feed(s) into a feed.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": "Kyo Nagashima <hail2u@gmail.com> (https://kyonagashima.com/)",
   "bugs": {
     "url": "https://github.com/hail2u/node-feedmix/issues"
