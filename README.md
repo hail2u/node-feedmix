@@ -1,4 +1,4 @@
-Feedmix
+FeedMix
 =======
 
 Merge RSS 2.0 feed(s) into a feed.
