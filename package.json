@@ -17,7 +17,7 @@
     "README.md",
     "index.js",
     "package.json",
-    "task",
+    "tasks",
     "test"
   ],
   "homepage": "https://github.com/hail2u/node-feedmix",
