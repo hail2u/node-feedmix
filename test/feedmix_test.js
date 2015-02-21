@@ -13,7 +13,7 @@ var actual = feedmix.merge([
 var expected = fs.readFileSync(dirExpected + 'm.rss', 'utf8').trim();
 
 exports.merge = function (test) {
-  test.expect(5);
+  test.expect(6);
 
   var feed = '<rss><channel><title> Test </title>' +
     '<item><pubDate>Sun, 22 Fed 2015 03:06:11 +0900</pubDate></item>' +
@@ -32,6 +32,13 @@ exports.merge = function (test) {
       trim: true
     }).rss.channel[0].title[0],
     'Test'
+  );
+
+  test.strictEqual(
+    feedmix.merge([feed], {
+      explicitArray: false
+    }).rss.channel[0].title[0],
+    ' Test '
   );
 
   test.strictEqual(

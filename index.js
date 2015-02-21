@@ -47,6 +47,7 @@ exports.merge = function (feeds, options) {
     options = {};
   }
 
+  options.explicitArray = true;
   feed = parseFeedSync(feeds.shift(), options);
   channel = feed.rss.channel[0];
   channel.item = mergeItems(channel.item, feeds, options);
