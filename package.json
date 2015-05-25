@@ -26,10 +26,7 @@
     "gruntplugin",
     "rss"
   ],
-  "license": {
-    "type": "MIT",
-    "url": "http://hail2u.mit-license.org/2015"
-  },
+  "license": "MIT",
   "main": "index.js",
   "repository": {
     "type": "git",
