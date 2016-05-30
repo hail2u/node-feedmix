@@ -7,7 +7,6 @@
     "url": "https://github.com/hail2u/node-feedmix/issues"
   },
   "dependencies": {
-    "fs-extra": "^0.16.3",
     "xml2js": "^0.4.5"
   },
   "devDependencies": {
@@ -16,7 +15,6 @@
   "homepage": "https://github.com/hail2u/node-feedmix",
   "keywords": [
     "feed",
-    "gruntplugin",
     "rss"
   ],
   "license": "MIT",
