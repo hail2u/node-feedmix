@@ -33,7 +33,7 @@ USAGE
 This merges `b.rss` and `c.rss` into `a.rss`. All items are sorted, and
 `lastBuildDate` element will be updated.
 
-Alos you can pass [xml2js’s parser options][1] to `merge()` and [builder
+Also, You can pass xml2js’s [parser options][1] to `merge()` and [builder
 options][2] to `stringify()`.
 
 
